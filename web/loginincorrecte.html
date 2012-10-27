@@ -1,0 +1,85 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="utf-8">  
+<title>Login</title>  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">  
+  
+</head>  
+
+<body>
+ 
+<div class="container">
+<div class="navbar navbar-fixed-top">  
+<div class="navbar-inner">  
+<div class="container">  
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">  
+<span class="icon-bar"></span>  
+<span class="icon-bar"></span>  
+<span class="icon-bar"></span>  
+</a>  
+<a class="brand" href="#"><img src="./images/logopremat.png" width="111" height="30" alt="premat logo"/></a>  
+<div class="nav-collapse">  
+<ul class="nav">  
+<li class="active"><a href="#">Login</a></li>
+<li><a href="./registre.html">Registre</a></li>  
+<li><a href="#about">Sobre nosaltres</a></li>  
+<li><a href="#contact">Contacte</a></li>  
+</ul>  
+</div><!--/.nav-collapse -->  
+</div>  
+</div>  
+</div>
+</div>
+    
+   
+
+    <!--/navbaaaaaar final, empieza container login-->
+    <div class="container-fluid">
+        <form class="form-horizontal" action="login" method="POST">
+        <fieldset>
+          <legend>Login</legend>
+           <blockquote>
+            <p>Ups! Introdueix les dades correctes</p>
+            <small>El nom d' usuari o el password proporcionats no son correcte, si us plau torna a introduir-los </small>
+           </blockquote>
+          <div class="control-group warning">
+            <label class="control-label" for="input01">Usuari</label>
+            <div class="controls">
+                <input type="text" class="input-xlarge" id="user" name="usr" style="color: black">
+              <p class="help-block">Introduir nom d'usuari</p>
+            </div>
+          </div>
+          <div class="control-group warning">
+              <label class="control-label" for="input01">Password</label>
+            <div class="controls">
+              <input type="password" class="input-xlarge" id="password" name="pw" style="color: black">
+              <p class="help-block">Introduir password</p>
+            </div>
+          </div>
+		  
+		  <div class="control-group">
+            <label class="control-label" for="optionsCheckbox">Recorda'm</label>
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" id="optionsCheckbox" value="option1" disabled>
+              </label>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type=submit class="btn btn-primary" value="Login">Enviar</button>
+            <input name=option type=hidden value="0">
+          </div>
+        </fieldset>
+    </form>
+    </div>    
+
+    
+</body>
+</html>
